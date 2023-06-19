@@ -15,6 +15,7 @@ The project follows a common directory structure for a React application. Here i
 
 - `/public`: Contains the public assets and the HTML template file.
 - `/src`: Contains the source code of the application.
+  - `/atoms`: Contains the Jotai atoms for state management.
   - `/components`: Contains reusable components used throughout the application.
   - `/pages`: Contains the login and dashboard screens.
   - `/assets`: Contains the static assets, like images.
