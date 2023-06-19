@@ -5,7 +5,7 @@ import { Field } from "@/components/Field";
 
 import { useField } from "./useField";
 
-const errorMockMessage = "Value should have at least 5 characters"
+const errorMockMessage = "Value should have at least 5 characters";
 
 const TestComponentWrapper = () => {
   const TestComponent = () => {
@@ -13,24 +13,22 @@ const TestComponentWrapper = () => {
       type: "text",
       validate: (value: string) => {
         if (value.length < 5) {
-          return errorMockMessage
+          return errorMockMessage;
         }
         return undefined;
       },
     });
 
-    return (
-      <Field label="test" fieldProps={field} />
-    )
-  }
+    return <Field label="test" fieldProps={field} />;
+  };
 
-  return <TestComponent />
+  return <TestComponent />;
 };
 
 describe("useField", () => {
   test("should update value on input change", () => {
-    render(<TestComponentWrapper />)
-    const input = screen.getByRole("textbox")
+    render(<TestComponentWrapper />);
+    const input = screen.getByRole("textbox");
 
     fireEvent.change(input, {
       target: {
@@ -42,8 +40,8 @@ describe("useField", () => {
   });
 
   test("should validate field correctly", () => {
-    render(<TestComponentWrapper />)
-    const input = screen.getByRole("textbox")
+    render(<TestComponentWrapper />);
+    const input = screen.getByRole("textbox");
 
     fireEvent.change(input, {
       target: {
@@ -51,8 +49,8 @@ describe("useField", () => {
       },
     });
 
-    const errorSpan = screen.getByText(errorMockMessage)
+    const errorSpan = screen.getByText(errorMockMessage);
 
-    expect(errorSpan).toBeInTheDocument()
+    expect(errorSpan).toBeInTheDocument();
   });
 });
