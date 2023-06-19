@@ -8,7 +8,7 @@ import { useField } from "@/hooks/useField";
 
 import { fakeLogin, validateEmail, validatePassword } from "@/utils";
 
-import { userAtom } from "../atoms";
+import { userAtom } from "@/atoms";
 import { Messages } from "@/config/messages";
 
 const LoginPage = () => {

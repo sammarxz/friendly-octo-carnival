@@ -10,4 +10,6 @@ const initialUser: User = {
   password: "",
 };
 
-export const userAtom = atom<User>(initialUser);
+const userAtom = atom<User>(initialUser);
+
+export { userAtom };
