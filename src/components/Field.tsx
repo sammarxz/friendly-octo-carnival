@@ -1,4 +1,4 @@
-import { InputHTMLAttributes, FC } from "react";
+import { InputHTMLAttributes } from "react";
 
 import { UseFieldResult } from "@/hooks/useField";
 
