@@ -3,7 +3,7 @@ import { useAtom } from "jotai";
 import { useNavigate } from "react-router-dom";
 import { GrGoogle } from "react-icons/gr";
 
-import { Logo, Field, Button } from "@/components";
+import { Logo, Field, Button, Checkbox } from "@/components";
 
 import { useField } from "@/hooks/useField";
 
@@ -68,12 +68,7 @@ const LoginPage = () => {
             <Field label="Email" required fieldProps={emailField} />
             <Field label="Password" required fieldProps={passwordField} />
             <div className="mb-6 flex items-center justify-between">
-              <div className="">
-                <label className="inline-block hover:cursor-pointer">
-                  <input className="mr-1" type="checkbox" />
-                  Keep me logged in
-                </label>
-              </div>
+              <Checkbox label="Keep me logged in" onChange={() => {}} />
               <a href="#!" className="text-primary-500 hover:underline ">
                 Forgot password?
               </a>
