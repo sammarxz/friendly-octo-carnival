@@ -1,15 +1,24 @@
-import { useAtom } from "jotai";
+import { useState } from "react";
 
-import { userAtom } from "@/atoms";
+import { Sidebar, Content } from "./components";
 
 const Dashboard = () => {
-  const [user] = useAtom(userAtom);
+  const [showSidebar, onSetShowSidebar] = useState(false);
 
   return (
-    <>
-      <h1 className="text-3xl">Dashboard</h1>
-      {JSON.stringify(user)}
-    </>
+    <div className="flex">
+      <Sidebar
+        onSidebarHide={() => {
+          onSetShowSidebar(false);
+        }}
+        showSidebar={showSidebar}
+      />
+      {/* <Content
+        onSidebarHide={() => {
+          onSetShowSidebar(true);
+        }}
+      /> */}
+    </div>
   );
 };
 
