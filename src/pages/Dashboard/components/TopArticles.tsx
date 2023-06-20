@@ -31,7 +31,7 @@ const TopArticles = () => {
                 >
                   {status}
                 </span>
-                <h4 className="w-16 text-right">${earnings}</h4>
+                <h4 className="w-16 text-right font-semibold">${earnings}</h4>
               </div>
             </li>
           ),

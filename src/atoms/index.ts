@@ -1,4 +1,5 @@
 import { atom } from "jotai";
+import { atomWithStorage } from "jotai/utils";
 
 export type User = {
   email: string;
@@ -12,4 +13,6 @@ const initialUser: User = {
 
 const userAtom = atom<User>(initialUser);
 
-export { userAtom };
+const loggedAtom = atomWithStorage("loggedIn", false);
+
+export { userAtom, loggedAtom };

@@ -1,16 +1,16 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 import { LoginPage, Dashboard } from "@/pages";
 
-const router = createBrowserRouter([
+const routes = (isLoggedIn: boolean) => [
   {
     path: "/",
-    element: <LoginPage />,
+    element: isLoggedIn ? <Dashboard /> : <LoginPage />,
   },
   {
     path: "/dashboard",
-    element: <Dashboard />,
+    element: isLoggedIn ? <Dashboard /> : <Navigate to="/" />,
   },
-]);
+];
 
-export { router };
+export { routes };

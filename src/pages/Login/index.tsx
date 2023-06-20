@@ -9,7 +9,7 @@ import { useField } from "@/hooks/useField";
 
 import { fakeLogin, validateEmail, validatePassword } from "@/utils";
 
-import { userAtom } from "@/atoms";
+import { userAtom, loggedAtom } from "@/atoms";
 
 import { Messages } from "@/config/messages";
 
@@ -17,6 +17,7 @@ import loginImageUrl from "@/assets/login-image.webp";
 
 const LoginPage = () => {
   const [_user, setUser] = useAtom(userAtom);
+  const [loggedIn, setLoggedIn] = useAtom(loggedAtom);
   const [formError, setFormError] = useState("");
   const navigate = useNavigate();
 
@@ -44,6 +45,7 @@ const LoginPage = () => {
           email: emailField.value,
           password: passwordField.value,
         }));
+        setLoggedIn(true);
         return navigate("/dashboard");
       }
     }
