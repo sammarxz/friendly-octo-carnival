@@ -20,7 +20,7 @@ interface SidebarProps {
 
 const Sidebar = ({ onSidebarHide, showSidebar }: SidebarProps) => {
   const [selected, _setSelected] = useState("0");
-  const [loggedIn, setLoggedIn] = useAtom(loggedAtom);
+  const [_loggedIn, setLoggedIn] = useAtom(loggedAtom);
   const sidebarClassName = createClassName(
     `fixed inset-y-0 left-0 bg-card w-full sm:w-20 xl:w-60 sm:flex flex-col 
     z-10 text-gray-800 border-r border-gray-200 py-4 bg-white`,

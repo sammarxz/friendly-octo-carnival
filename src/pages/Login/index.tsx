@@ -17,7 +17,7 @@ import loginImageUrl from "@/assets/login-image.webp";
 
 const LoginPage = () => {
   const [_user, setUser] = useAtom(userAtom);
-  const [loggedIn, setLoggedIn] = useAtom(loggedAtom);
+  const [_loggedIn, setLoggedIn] = useAtom(loggedAtom);
   const [formError, setFormError] = useState("");
   const navigate = useNavigate();
 

@@ -1,6 +1,6 @@
 import { RiCalendarLine, RiMenu3Fill } from "react-icons/ri";
 
-import { Button, IconButton, SearchInput } from "@/components";
+import { IconButton, SearchInput } from "@/components";
 
 import { getCurrentDate } from "@/utils";
 
