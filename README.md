@@ -2,6 +2,8 @@
 
 This is a take-home test project for building a simple login and dashboard screen for a SaaS platform targeting small FMCG (Fast-Moving Consumer Goods) brands. The project utilizes React, Vite, Vitest, React Router DOM, Tailwind, and Jotai technologies. The application is built with TypeScript to ensure type safety and reliability.
 
+![dashboard](https://cdn.dribbble.com/userupload/7964960/file/original-ad20fdf67ab9ea1e27b0b976dd465736.png?compress=1&resize=1024x768)
+
 ## Requirements
 
 - The application should be responsive and optimized for both desktop and mobile devices.
