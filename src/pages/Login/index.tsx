@@ -74,7 +74,7 @@ const LoginPage = () => {
               </a>
             </div>
             <Button
-              color="primary"
+              variant="primary"
               type="submit"
               className="flex w-full justify-center"
               disabled={!(emailField.isValid && passwordField.isValid)}
@@ -102,7 +102,7 @@ const LoginPage = () => {
           </div>
           <div className="flex justify-stretch gap-4">
             <Button
-              color="secondary"
+              variant="secondary"
               className="flex items-center justify-center gap-2 w-full"
               title="Sign in with Google"
             >

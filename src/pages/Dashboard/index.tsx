@@ -13,11 +13,11 @@ const Dashboard = () => {
         }}
         showSidebar={showSidebar}
       />
-      {/* <Content
+      <Content
         onSidebarHide={() => {
           onSetShowSidebar(true);
         }}
-      /> */}
+      />
     </div>
   );
 };

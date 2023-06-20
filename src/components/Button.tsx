@@ -4,13 +4,13 @@ interface ButtonProps
       HTMLButtonElement
     >,
     React.AriaAttributes {
-  color: "primary" | "secondary";
+  variant: "primary" | "secondary";
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
-  const { children, color, className, ...rest } = props;
+  const { children, variant, className, ...rest } = props;
   const colors =
-    color === "primary"
+    variant === "primary"
       ? "bg-primary-500 hover:bg-primary-600 focus-visible:outline-primary-700 text-white shadow-lg shadow-primary-500/50"
       : "bg-gray-100 hover:bg-gray-200 focus-visible:outline-gray-300 text-gray-500";
 

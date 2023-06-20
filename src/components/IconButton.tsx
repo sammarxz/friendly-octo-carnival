@@ -2,7 +2,7 @@ import React, { MouseEventHandler } from "react";
 
 interface IconButtonProps {
   onClick?: MouseEventHandler<HTMLButtonElement>;
-  Icon: React.ComponentType<{ className: string }>;
+  Icon: React.ComponentType<{ className?: string }>;
   className?: string;
 }
 
