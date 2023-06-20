@@ -52,10 +52,12 @@ To run the project locally, follow these steps:
 
 This project is a basic implementation of the login and dashboard screens for the SaaS platform. Here are some potential improvements and next steps to consider:
 
-- [ ] style the application using tailwind
+- [x] style the application using tailwind
+- [x] make improvements on UI
+- [x] add protected routes
+- [x] persist login in local storage
 - [ ] Add more unit tests to cover all the login page.
 - [ ] Implement atomic design system
-- [ ] Meybe, improve the architecture
 
 ## Conclusion
 
