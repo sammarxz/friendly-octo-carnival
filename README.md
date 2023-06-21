@@ -46,6 +46,7 @@ To run the project locally, follow these steps:
 4. **React Router DOM**: React Router DOM is used for handling routing in the application, allowing navigation between the login and dashboard screens.
 5. **Tailwind**: Tailwind CSS is used as the utility-first CSS framework to quickly style the components and create a responsive layout.
 6. **Jotai**: Jotai is used for state management, providing a simple and efficient way to manage and share application state.
+7. **Rechart**: Rechart is used for make the graghs in the Dashboard.
 6. **Rome**: As a replacement for eslint + prettier
 
 ## Improvements and Next Steps
@@ -57,7 +58,6 @@ This project is a basic implementation of the login and dashboard screens for th
 - [x] add protected routes
 - [x] persist login in local storage
 - [ ] Add more unit tests to cover all the login page.
-- [ ] Implement atomic design system
 
 ## Conclusion
 
